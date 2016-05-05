@@ -3,8 +3,11 @@
 include_once 'setting.inc.php';
 
 $_lang['sendex'] = 'Sendex';
-$_lang['sendex_menu_desc'] = 'A sample Extra to develop from.';
-$_lang['sendex_items'] = 'Items';
+$_lang['sendex_menu_desc'] = 'Newsletters management';
+
+$_lang['sendex_newsletters'] = 'Newsletters';
+$_lang['sendex_newsletters_intro'] = 'On this page you create and edit your subscription.';
+
 $_lang['sendex_item_create'] = 'Create Item';
 $_lang['sendex_item_err_ae'] = 'An Item already exists with that name.';
 $_lang['sendex_item_err_nf'] = 'Item not found.';

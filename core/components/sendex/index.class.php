@@ -2,6 +2,7 @@
 /**
  * Class SendexMainController
  */
+
 abstract class SendexMainController extends modExtraManagerController {
 	/** @var Sendex $Sendex */
 	public $Sendex;

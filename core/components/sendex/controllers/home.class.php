@@ -3,6 +3,7 @@
  * The home manager controller for Sendex.
  *
  */
+
 class SendexHomeManagerController extends SendexMainController {
 	/* @var Sendex $Sendex */
 	public $Sendex;
@@ -21,7 +22,7 @@ class SendexHomeManagerController extends SendexMainController {
 	 * @return void
 	 */
 	public function loadCustomCssJs() {
-		$this->addJavascript($this->Sendex->config['jsUrl'] . 'mgr/widgets/items.grid.js');
+		$this->addJavascript($this->Sendex->config['jsUrl'] . 'mgr/widgets/newsletters.grid.js');
 		$this->addJavascript($this->Sendex->config['jsUrl'] . 'mgr/widgets/home.panel.js');
 		$this->addJavascript($this->Sendex->config['jsUrl'] . 'mgr/sections/home.js');
 		$this->addHtml('<script type="text/javascript">
