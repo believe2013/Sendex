@@ -5,7 +5,7 @@ $snippets = array();
 $tmp = array(
 	'Sendex' => array(
 		'file' => 'sendex',
-		'description' => '',
+		'description' => 'Snippet description',
 	),
 );
 
