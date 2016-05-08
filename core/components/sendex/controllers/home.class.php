@@ -4,6 +4,7 @@
  *
  */
 
+
 class SendexHomeManagerController extends SendexMainController {
 	/* @var Sendex $Sendex */
 	public $Sendex;

@@ -7,4 +7,5 @@
 
     <input type="hidden" name="sx_action" value="subscribe">
     <button type="submit">[[%sendex_btn_subscribe]]</button>
+    [[+message]]
 </form>
