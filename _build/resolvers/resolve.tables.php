@@ -15,9 +15,20 @@ if ($object->xpdo) {
 				'sxSubscriber',
 				'sxQueue',
 			);
-			foreach ($objects as $tmp) {
-				$manager->createObjectContainer($tmp);
+			foreach ($objects as $object) {
+				$manager->createObjectContainer($object);
 			}
+
+			// Запоминаем текущий уровень ошибок
+			$level = $modx->getLogLevel();
+			// Выставляем самый мощный уровень, чтобы не было ругани в логах при попытке создания существующих полей
+			$modx->setLogLevel(xPDO::LOG_LEVEL_FATAL);
+			// Добавляем поле и индекс
+			$manager->addField('sxQueue', 'hash');
+			$manager->addIndex('sxQueue', 'hash');
+			// Возвращаем старый уровень логирования
+			$modx->setLogLevel($level);
+
 			break;
 
 		case xPDOTransport::ACTION_UPGRADE:
