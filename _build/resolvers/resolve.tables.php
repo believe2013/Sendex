@@ -26,6 +26,9 @@ if ($object->xpdo) {
 			// Добавляем поле и индекс
 			$manager->addField('sxQueue', 'hash');
 			$manager->addIndex('sxQueue', 'hash');
+
+			$manager->addField('sxSubscriber', 'code');
+			$manager->addIndex('sxSubscriber', 'code');
 			// Возвращаем старый уровень логирования
 			$modx->setLogLevel($level);
 
